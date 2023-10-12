@@ -21,11 +21,12 @@ public class InitalServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         resp.setContentType("text/html");
+
         PrintWriter writer = resp.getWriter();
         writer.println("<html>");
         writer.println("<head><title>Servlet Initiale</title></head>");
         writer.println("<body>");
-        writer.println("<h1>Bonjouuuuur</h1>");
+        writer.println("<h1 style=\"color: red\">Anass = <strike> Non Validé </strike</h1>");
         writer.println("</body>");
         writer.println("</html>");
     }
